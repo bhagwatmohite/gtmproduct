@@ -1,0 +1,186 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* font-family: Poppins; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.left-div,
+.right-div {
+  flex: 1;
+  /* height: 200px; */
+  align-items: center;
+}
+
+.left-div {
+  /* background-color: lightblue; */
+  /* height: 500px; */
+  margin-bottom: 40px;
+}
+
+.left-div img {
+  height: clamp(200px, 40vw, 400px);
+  margin-top: 50px;
+  display: flex;
+  margin-left: clamp(100px, 40vw, 400px);
+  /* margin-left: 400px; */
+  margin-right: 50px;
+}
+
+.right-content {
+  text-align: start;
+  align-items: center;
+  /* margin-top: 60px; */
+}
+
+.review {
+  text-align: center;
+  align-items: center;
+}
+
+.off-color {
+  color: #E05D00;
+}
+
+.availabel-offer {
+  color: #F13E1E;
+}
+
+.tc-color {
+  color: #2874F0;
+}
+
+.view-7offer {
+  color: #F13E1E;
+}
+
+.bank-offer {
+  font-weight: bold;
+}
+
+.price {
+  text-decoration: line-through;
+  font-weight: 300;
+}
+
+/* button style */
+.button-div {
+  padding-top: 20px;
+}
+
+.button-div button {
+  height: clamp(20px, 8vh, 40px);
+  width: clamp(100px, 40vw, 150px);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-div button:first-child {
+  margin-right: 10px;
+  border: 1px solid #E05D00;
+  color: #E05D00;
+  background-color: white;
+}
+
+.button-div button:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+
+
+.review-section {
+  text-align: start;
+  padding-right: 50px;
+  padding-left: 50px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* for responsiveness */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-div,
+  .right-div {
+    flex: 0 0 48%;
+
+  }
+}
+
+.left-div,
+.right-div {
+  margin-bottom: 50px;
+}
+
+.button-div {
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 60px;
+  }
+
+  .button-div button {
+    margin-bottom: 10px;
+  }
+}
+
+.right-content {
+  padding-top: 60px;
+  /* border: 1px solid #ccc; */
+  margin-left: 10px;
+
+}
+
+@media (max-width: 767px) {
+  .right-content {
+    padding: 10px;
+    margin-left: -5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .right-div {
+    margin-left: 50px;
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* three images div css */
+.left-div3 {
+  margin-left: 150px;
+  display: flex;
+  text-align: center;
+}
+
+@media (max-width:730px) {
+  .left-div3 {
+    display: none;
+  }
+}
